@@ -1,5 +1,7 @@
 # Mongo (is just pawn in game of life)
 
+Following steps in [Nana's video](https://www.youtube.com/watch?v=3c-iBn73dDE).
+
 Beginning with using `docker run` commands to build containers. See below.
 
 #1 Create the network
