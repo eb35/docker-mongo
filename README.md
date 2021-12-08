@@ -6,15 +6,13 @@ Beginning with using `docker run` commands to build containers. See below.
 
 #1 Create the network
 ```
-docker run -d
-	-e ME_CONFIG_MONGODB_ADMINUSERNAME=admin
-	-e ME_CONFIG_MONGODB_ADMINPASSWORD=password
-	--net mongo-network
+docker network create mongo-network
 ```
 
 #2 Start the MongoDB container (to store the data)
 ```
-docker run -p 27017:27017 -d
+docker run -d
+	-p 27017:27017
 	-e MONGO_INITDB_ROOT_USERNAME=admin
 	-e MONGO_INITDB_ROOT_PASSWORD=password
 	--name mongodb
