@@ -15,7 +15,7 @@ app.get(`/`, (req, res) => {
 });
 
 app.get(`/profile-picture`, (req, res) => {
-	var img = fs.readFileSync(`C:/robcode/Docker/mongopawn/app/images/profile-1.jpg`);
+	var img = fs.readFileSync(path.resolve(__dirname, 'images/profile-1.jpg'));
 	res.writeHead(200, { 'Content-Type': 'image/jpg' });
 	res.end(img, 'binary');
 });
