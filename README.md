@@ -2,6 +2,7 @@
 
 Following steps in [Nana's video](https://www.youtube.com/watch?v=3c-iBn73dDE).
 
+# Phase 1
 Beginning with using `docker run` commands to build containers. See below.
 
 #1 Create the network
@@ -32,4 +33,14 @@ docker run -d
 	mongo-express
 ```
 
-Next steps will be simplifying my container creation
+# Phase 2
+Now we no longer need to run `docker run` commands. We have built a docker-compose file that handles all of that configuration.
+
+All that we have to do is run the following command:
+```
+docker-compose up
+```
+And we will be up and running just like before.
+
+# Next
+Next we'll move the NodeJS app in and do some other things. But my next goal will be understand volumes, so I don't lose my db everytime.
